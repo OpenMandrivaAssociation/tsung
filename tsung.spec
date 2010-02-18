@@ -10,8 +10,10 @@ Patch0:		tsung-1.3.1-destdir.patch
 BuildRequires:	erlang-devel
 BuildRequires:	erlang-xmerl
 BuildRequires:	erlang-ssl
+BuildRequires:	erlang-crypto
 Requires:	erlang-xmerl
 Requires:	erlang-ssl
+Requires:	erlang-crypto
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
