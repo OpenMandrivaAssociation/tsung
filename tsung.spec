@@ -12,9 +12,11 @@ BuildRequires:	erlang-xmerl
 BuildRequires:	erlang-ssl
 BuildRequires:	erlang-crypto
 BuildRequires:	erlang-compiler
+BuildRequires:	erlang-snmp
 Requires:	erlang-xmerl
 Requires:	erlang-ssl
 Requires:	erlang-crypto
+Requires:	erlang-snmp
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
