@@ -11,6 +11,7 @@ BuildRequires:	erlang-devel
 BuildRequires:	erlang-xmerl
 BuildRequires:	erlang-ssl
 BuildRequires:	erlang-crypto
+BuildRequires:	erlang-compiler
 Requires:	erlang-xmerl
 Requires:	erlang-ssl
 Requires:	erlang-crypto
