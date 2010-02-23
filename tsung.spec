@@ -36,7 +36,7 @@ WWW-authentication. It also has support for SSL.
 autoreconf -fiv
 %configure2_5x
 
-%make
+%make -j2
 
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
