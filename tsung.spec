@@ -1,6 +1,6 @@
 Summary:	A distributed multi-protocol load testing tool
 Name:		tsung
-Version:	1.3.1
+Version:	1.3.2
 Release:	%mkrel 1
 License:	GPLv2
 Group:		Development/Other
