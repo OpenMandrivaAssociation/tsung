@@ -13,6 +13,7 @@ BuildRequires:	erlang-ssl
 BuildRequires:	erlang-crypto
 BuildRequires:	erlang-compiler
 BuildRequires:	erlang-snmp
+BuildRequires:	erlang-eunit
 Requires:	erlang-xmerl
 Requires:	erlang-ssl
 Requires:	erlang-crypto
