@@ -1,7 +1,7 @@
 Summary:	A distributed multi-protocol load testing tool
 Name:		tsung
-Version:	1.3.3
-Release:	%mkrel 1
+Version:	1.4.2
+Release:	1
 License:	GPLv2
 Group:		Development/Other
 Url:		http://tsung.erlang-projects.org/
@@ -18,7 +18,6 @@ Requires:	erlang-xmerl
 Requires:	erlang-ssl
 Requires:	erlang-crypto
 Requires:	erlang-snmp
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 It is protocol-independent and can currently be used to stress and
@@ -32,28 +31,21 @@ WWW-authentication. It also has support for SSL.
 
 %prep
 %setup -q %{name}-%{version}
-%patch0 -p1
+#%patch0 -p1
 
 %build
 # (tpg) needed by patch0
 autoreconf -fiv
 %configure2_5x
 
-%make -j2
+%make
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 %makeinstall_std
 
 rm -rf %{buildroot}%{_docdir}/%{name}
 
-%find_lang %{name}
-
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
-%files -f %{name}.lang
-%defattr(-,root,root)
+%files
 %doc examples/* doc/*
 %doc CHANGES CONTRIBUTORS README TODO
 %{_bindir}/*
