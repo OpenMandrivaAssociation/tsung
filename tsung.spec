@@ -53,3 +53,24 @@ rm -rf %{buildroot}%{_docdir}/%{name}
 %{_libdir}/erlang/lib/%{name}*
 %{_datadir}/%{name}
 %{_mandir}/man1/t*
+
+
+%changelog
+* Tue Mar 06 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.4.2-1
++ Revision: 782463
+- version update 1.4.2
+
+* Sun Aug 22 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 1.3.3-1mdv2011.0
++ Revision: 571977
+- update to new version 1.3.3
+
+* Mon Aug 16 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 1.3.2-1mdv2011.0
++ Revision: 570612
+- add buildrequires on erlang-eunit
+- update to new version 1.3.2
+
+* Tue Feb 23 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 1.3.1-1mdv2010.1
++ Revision: 510316
+- restrict to max two jobs
+- import tsung
+
