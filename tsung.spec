@@ -4,7 +4,7 @@ Version:	1.4.2
 Release:	2
 License:	GPLv2
 Group:		Development/Other
-Url:		http://tsung.erlang-projects.org/
+Url:		https://tsung.erlang-projects.org/
 Source0:	http://tsung.erlang-projects.org/dist/%{name}-%{version}.tar.gz
 Patch0:		tsung-1.3.1-destdir.patch
 BuildRequires:	erlang-devel
